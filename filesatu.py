@@ -8,12 +8,13 @@ def diskon(nilai,persen):
     hasil = nilai - diskon
     return round(hasil)
 
-nilai = 100000
-persen = 20 # dalam persen
 
 print("Mendapat diskon!")
-print("Harga awal \t:",nilai)
-print("Harga akhir \t:",diskon(nilai, persen))
+print("Masukkan harga awal \t:")
+nilai = input()
+print("Masukkan besar diskon \t:")
+persen = input()
+print("Harga setelah diskon \t:",diskon(int(nilai), int(persen)))
 
 
     
